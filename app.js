@@ -14,6 +14,16 @@ document.getElementById('playButton').addEventListener('click', () => {
     }
 });
 
+// Stop sound when the app is minimized or closed
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        audio.pause(); // Stop the sound
+        audio.currentTime = 0; // Reset to start
+        isPlaying = false; // Update state
+        document.getElementById('playButton').innerText = 'Play Sound'; // Change button text
+    }
+});
+
 // Register the service worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
