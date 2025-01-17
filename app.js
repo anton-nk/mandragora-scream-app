@@ -6,11 +6,11 @@ document.getElementById('playButton').addEventListener('click', () => {
         audio.pause(); // Stop the sound
         audio.currentTime = 0; // Reset to start
         isPlaying = false; // Update state
-        document.getElementById('playButton').innerText = 'Play Sound'; // Change button text
+        document.getElementById('playButton').innerText = 'Scream'; // Change button text
     } else {
         audio.play(); // Play the sound
         isPlaying = true; // Update state
-        document.getElementById('playButton').innerText = 'Stop Sound'; // Change button text
+        document.getElementById('playButton').innerText = 'Relax'; // Change button text
     }
 });
 
@@ -20,7 +20,7 @@ document.addEventListener('visibilitychange', () => {
         audio.pause(); // Stop the sound
         audio.currentTime = 0; // Reset to start
         isPlaying = false; // Update state
-        document.getElementById('playButton').innerText = 'Play Sound'; // Change button text
+        document.getElementById('playButton').innerText = 'Scream'; // Change button text
     }
 });
 
