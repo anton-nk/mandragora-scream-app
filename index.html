@@ -12,5 +12,13 @@
     <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
         <button id="playButton">Make Scream</button>
     </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log("Service worker registered"))
+                .catch((error) => console.error("Service worker registration failed:", error));
+        }
+    </script>
 </body>
 </html>

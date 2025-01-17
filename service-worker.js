@@ -1,12 +1,14 @@
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open('v1').then((cache) => {
+        caches.open('pwa-cache').then((cache) => {
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/manifest.json',
                 '/app.js',
-                '/sound.mp3'
+                '/styles.css',
+                '/sound.mp3',
+                'icon-192.png', // Add your icon files here
+                'icon-512.png'
             ]);
         })
     );

@@ -3,12 +3,17 @@
     "short_name": "SoundPlayer",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "background_color": "#2e003e",
+    "theme_color": "#ff007f",
     "icons": [
         {
-            "src": "icon.png",
-            "sizes": "256x256",
+            "src": "icon-192.png", // Your icon file
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png", // Your icon file
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]
