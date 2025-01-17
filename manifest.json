@@ -2,7 +2,7 @@
     "name": "Simple Sound Player",
     "short_name": "SoundPlayer",
     "start_url": ".",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#2e003e",
     "theme_color": "#ff007f",
     "icons": [
