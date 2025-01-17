@@ -1,0 +1,32 @@
+body {
+    background-color: #2e003e; /* Dark purple background */
+    color: #aaff00; /* Bright green text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    width: 200px;
+    height: 200px;
+    background-color: #ff007f; /* Bright pink button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 50%;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff4d94; /* Lighter pink on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
